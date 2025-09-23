@@ -332,7 +332,7 @@ public class KeycloakDeploymentDependentResource extends CRUDKubernetesDependent
         if (!specBuilder.hasDnsPolicy()) {
             specBuilder.withDnsPolicy("ClusterFirst");
         }
-        boolean automount = !Boolean.FALSE.equals(keycloakCR.getSpec().getAutomountServiceAccountToken());
+        boolean automount = keycloakCR.getSpec().getAutomountServiceAccountToken();
         specBuilder.withAutomountServiceAccountToken(automount);
         handleScheduling(keycloakCR, schedulingLabels, specBuilder);
 
