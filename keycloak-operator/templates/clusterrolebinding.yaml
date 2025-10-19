@@ -1,3 +1,4 @@
+---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
@@ -8,6 +9,21 @@ roleRef:
   kind: ClusterRole
   apiGroup: rbac.authorization.k8s.io
   name: keycloakcontroller-cluster-role
+subjects:
+  - kind: ServiceAccount
+    name: {{ include "keycloak.serviceAccountName" . }}
+    namespace: {{ .Release.Namespace }}
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  labels:
+    {{- include "keycloak.labels" . | nindent 4 }}
+  name: keycloakrealmimport-operator-clusterrole-binding
+roleRef:
+  kind: ClusterRole
+  apiGroup: rbac.authorization.k8s.io
+  name: keycloakrealmimportcontroller-cluster-role
 subjects:
   - kind: ServiceAccount
     name: {{ include "keycloak.serviceAccountName" . }}

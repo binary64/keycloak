@@ -3,7 +3,17 @@ entries:
   keycloak-operator:
   - apiVersion: v2
     appVersion: 26.4.1
-    created: "2025-10-19T18:45:14.133862931+01:00"
+    created: "2025-10-19T19:06:12.03143994+01:00"
+    description: A Helm chart for deploying keycloak operator on Kubernetes
+    digest: f6d5cbe0003be624979c160c972562b1fc91673c263956ab09fe9babaf3216dc
+    name: keycloak-operator
+    type: application
+    urls:
+    - keycloak-operator-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: 26.4.1
+    created: "2025-10-19T19:06:12.030874658+01:00"
     description: A Helm chart for deploying keycloak operator on Kubernetes
     digest: 46cfd5d9afa1b67173f25463941905e6c93a66326dbcabed6c7cb6093633fce9
     name: keycloak-operator
@@ -13,7 +23,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 26.4.1
-    created: "2025-10-19T18:45:14.13334149+01:00"
+    created: "2025-10-19T19:06:12.03039716+01:00"
     description: A Helm chart for deploying keycloak operator on Kubernetes
     digest: 1a6e05de53564a3549c9df82089f560cd1b9c7dfa9feb31459850de7c666cf49
     name: keycloak-operator
@@ -23,7 +33,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 26.4.1
-    created: "2025-10-19T18:45:14.132819068+01:00"
+    created: "2025-10-19T19:06:12.029905614+01:00"
     description: A Helm chart for deploying keycloak operator on Kubernetes
     digest: 448584d01fb8543ae6bf7e463dd77fb3bf855e689073aa8848faf5a57814e516
     name: keycloak-operator
@@ -33,7 +43,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 26.4.1
-    created: "2025-10-19T18:45:14.132285882+01:00"
+    created: "2025-10-19T19:06:12.028790982+01:00"
     description: A Helm chart for deploying keycloak operator on Kubernetes
     digest: c7b5fe6a45850903cf9143749ee1388b96cdcef8164d2a7d508741ee8ffd1982
     name: keycloak-operator
@@ -43,7 +53,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 26.3.3
-    created: "2025-10-19T18:45:14.131117562+01:00"
+    created: "2025-10-19T19:06:12.028192006+01:00"
     description: A Helm chart for deploying keycloak operator on Kubernetes
     digest: dd96081e6af1b6a1bee192ecc6d3706c7478e2b4ba2342ef0584b7b477a982e2
     name: keycloak-operator
@@ -53,7 +63,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 26.3.3
-    created: "2025-10-19T18:45:14.130430687+01:00"
+    created: "2025-10-19T19:06:12.027633968+01:00"
     description: A Helm chart for deploying keycloak operator on Kubernetes
     digest: 8e6455269adefb0f0140f3cf772bfc8c5335ed576a482380019fd5bfd97d169a
     name: keycloak-operator
@@ -63,7 +73,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 26.3.3
-    created: "2025-10-19T18:45:14.129879439+01:00"
+    created: "2025-10-19T19:06:12.026499943+01:00"
     description: A Helm chart for deploying keycloak operator on Kubernetes
     digest: 71195fd3fdaecbca48e74b60f10cc4e2bbb4602a9b3a266a6233831e3ab22a58
     name: keycloak-operator
@@ -71,4 +81,4 @@ entries:
     urls:
     - keycloak-operator-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-19T18:45:14.128648196+01:00"
+generated: "2025-10-19T19:06:12.025551969+01:00"
