@@ -25,6 +25,10 @@ spec:
                   fieldPath: metadata.namespace
             - name: RELATED_IMAGE_KEYCLOAK
               value: "{{ .Values.image.registry }}/{{ .Values.keycloakImage.repository }}:{{ .Values.keycloakImage.tag | default .Chart.AppVersion }}"
+            - name: QUARKUS_OPERATOR_SDK_CONTROLLERS_KEYCLOAKCONTROLLER_NAMESPACES
+              value: {{ .Values.monitorNamespaces | default "default,local" }}
+            - name: QUARKUS_OPERATOR_SDK_CONTROLLERS_KEYCLOAKREALMIMPORTCONTROLLER_NAMESPACES
+              value: {{ .Values.monitorNamespaces | default "default,local" }}
           image: "{{ .Values.image.registry }}/{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           {{- with .Values.livenessProbe }}
